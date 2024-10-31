@@ -1,0 +1,72 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+
+/* CMB2: Hide red 'x' button to remove panel */
+
+.cmb2-metabox button.dashicons-before.dashicons-no-alt.cmb-remove-group-row:not([disabled]) {
+	display: none;
+}
+#poststuff .repeatable .cmb-group-title {
+	padding-left: 12px !important;
+}
+
+
+/* CMB2: Disabled Field */
+
+.issscr-cmb-disabled-field {
+	opacity: .5;
+}
+
+.issscr-cmb-disabled-field {
+	pointer-events: none;
+}
+
+
+/* Freemius: Hide links to Freemius admin pages on Plugins page */
+
+/* Freemius: Hide affiliate marketing notifications */
+body.issscr-white-labeled .fs-slug-seo-content-randomizer.promotion[data-id='affiliate_program'] {
+	display: none !important;
+}
+
+/* Freemius: Hide plugin links */
+body.issscr-white-labeled.plugins-php table.plugins tr[data-plugin^="seo-content-randomizer"] .addons,
+body.issscr-white-labeled.plugins-php table.plugins tr[data-plugin^="seo-content-randomizer"] .upgrade,
+body.issscr-white-labeled.plugins-php table.plugins tr[data-plugin^="seo-content-randomizer"] .activate-license,
+body.issscr-white-labeled.plugins-php table.plugins tr[data-plugin^="seo-content-randomizer"] .opt-in-or-opt-out,
+body.issscr-white-labeled.plugins-php table.plugins tr[data-plugin^="seo-content-randomizer"] .toggle-auto-update,
+body.issscr-white-labeled.plugins-php table.plugins tr[data-plugin^="seo-content-randomizer"] .open-plugin-details-modal,
+body.issscr-simulated-plan.plugins-php table.plugins tr[data-plugin^="seo-content-randomizer"] .upgrade,
+body.issscr-simulated-plan.plugins-php table.plugins tr[data-plugin^="seo-content-randomizer"] .activate-license,
+body.issscr-simulated-plan.plugins-php table.plugins tr[data-plugin^="seo-content-randomizer"] .opt-in-or-opt-out {
+	display: none;
+}
+
+/* Freemius: Hide Update notification on Plugins page */
+body.issscr-white-labeled.plugins-php table.plugins #seo-content-randomizer-update {
+	display: none;
+}
+
+/* Freemius: Hide 'View Details' link */
+body.issscr-white-labeled.plugins-php table.plugins #seo-content-randomizer-update {
+	display: none;
+}
+
+
+/* TinyMCE: Add icon to Shortcode button */
+
+i.issscr-tinymce-shortcode-button-icon {
+	font: normal 20px/1 dashicons;
+	vertical-align: top;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+i.issscr-tinymce-shortcode-button-icon:before {
+	/*background-image: url('../images/issscr-shortcode-button-icon.png');*/
+	content: "\f503";
+}

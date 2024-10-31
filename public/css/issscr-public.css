@@ -1,0 +1,84 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+
+
+/**
+ * Flex Slider
+ */
+
+.flexslider {
+    margin: 0 0 1rem 0 !important;
+    cursor: pointer;
+    background: black;
+    border: none !important;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+}
+
+.flexslider > .slides {
+    margin: 0 !important;
+}
+
+.flexslider > .slides li {
+    margin: 0;
+}
+
+.flex-direction-nav a {
+    opacity: .7;
+}
+
+.flex-direction-nav .flex-prev {
+    left: 10px;
+}
+.flex-direction-nav .flex-next {
+    right: 10px;
+}
+
+
+
+/**
+ * FAQ Accordion Shortcode
+ */
+
+.issscr-definition-list-accordion {}
+
+.issscr-definition-list-accordion-item {
+    margin-bottom: 1rem;
+}
+
+.issscr-definition-list-accordion-item-header {
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.issscr-definition-list-accordion-icon {
+    display: flex;
+    align-items: center;
+    width: 20px;
+}
+
+.issscr-definition-list-accordion-icon span {
+    transition: all 0.4s ease;
+}
+
+.issscr-definition-list-accordion-item[data-status='open'] .issscr-definition-list-accordion-icon span {
+    transform: rotateZ(90deg);
+}
+
+.issscr-definition-list-accordion-title {}
+
+.issscr-definition-list-accordion-item-body {
+    display: none;
+    padding-left: 20px;
+}
